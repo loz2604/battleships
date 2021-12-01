@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="icon.PNG">
+    <audio src="splash2.wav" id="splash"></audio>
+    <audio src="boom1.wav" id="boom"></audio>
+    <title>Battleships</title>
+</head>
+
+<body>
+    <div id="heading">
+        <h1>Battleships</h1>
+    </div>
+    <div id="game">
+        <div class="grid"></div>
+        <div id="info">
+            <div id="shipSunk"></div>
+            <div id="attempts"></div>
+            <div id="ships">
+                <table id="table">
+                    <tr>
+                        <th>Ships</th>
+                        <th>Sunk</th>
+                    </tr>
+                    <tr>
+                        <td>Carrier (5)</td>
+                        <td class="tick" id="tick1"></td>
+                    </tr>
+                    <tr>
+                        <td>Battleship (4)</td>
+                        <td class="tick" id="tick2"></td>
+                    </tr>
+                    <tr>
+                        <td>Cruiser (3)</td>
+                        <td class="tick" id="tick3"></td>
+                    </tr>
+                    <tr>
+                        <td>Submarine (3)</td>
+                        <td class="tick" id="tick4"></td>
+                    </tr>
+                    <tr>
+                        <td>Destroyer (2)</td>
+                        <td class="tick" id="tick5"></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="gameOver"></div>
+            <div id="newGame"><button id="button">New Game</button></div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
